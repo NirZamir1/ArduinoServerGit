@@ -40,6 +40,7 @@ namespace ArduinoServerGit
                 while (listen.Pending())
                 {
                     client = listen.AcceptTcpClient();
+                    Console.WriteLine("Connected");
                 }
                 if (client.Connected)
                 {
